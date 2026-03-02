@@ -8,9 +8,6 @@ on:
         required: false
         type: boolean
         default: false
-  schedule:
-    # Check hourly for new commits and/or interface bumps.
-    - cron: "0 * * * *"
 
 concurrency:
   group: locales-publish-${{ github.ref }}
