@@ -238,6 +238,24 @@ def parse_locale_positional(text: str, enus_sections: list) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Glossary post-processing
+# ---------------------------------------------------------------------------
+
+def apply_glossary(text: str, glossary: dict) -> str:
+    """
+    Replace English WoW terms left verbatim by Claude with verified locale equivalents.
+    Applies longest-match first so 'Bountiful Delves' is replaced before 'Delves'.
+    """
+    for english in sorted(glossary, key=len, reverse=True):
+        if english.startswith("_"):
+            continue
+        target = glossary[english]
+        if isinstance(target, str) and english in text:
+            text = text.replace(english, target)
+    return text
+
+
+# ---------------------------------------------------------------------------
 # Batch builder
 # ---------------------------------------------------------------------------
 
@@ -315,22 +333,7 @@ def build_translation_map(enus_sections: list, locale_map: dict) -> dict:
 # Claude prompt / call
 # ---------------------------------------------------------------------------
 
-def build_prompt(locale_code: str, entries: list, context: dict) -> str:
-    lctx  = context.get(locale_code, {})
-    notes = lctx.get("_notes", {})
-
-    terms_lines = []
-    for term, val in lctx.items():
-        if term.startswith("_"):
-            continue
-        if isinstance(val, str):
-            terms_lines.append(f"  {term} -> {val}")
-        elif isinstance(val, dict):
-            for tid, tname in val.items():
-                terms_lines.append(f"  [{tid}] -> {tname}")
-
-    notes_lines = [f"  {k}: {v}" for k, v in notes.items()]
-
+def build_prompt(locale_code: str, entries: list) -> str:
     entries_json = json.dumps(
         [{"id": e["id"], "field": e["field"], "english": e["english"]} for e in entries],
         ensure_ascii=False,
@@ -350,23 +353,17 @@ You are translating a World of Warcraft addon's weekly checklist data into {LOCA
   translated into {locale_code} and remain ALL-CAPS at the end of the string.
 • Output exactly the same number of elements as the input, in the same order.
 
-═══ VERIFIED WoW TERMINOLOGY for {locale_code} ═══
-{chr(10).join(terms_lines) if terms_lines else "  (none provided)"}
-
-═══ IMPORTANT NOTES ═══
-{chr(10).join(notes_lines) if notes_lines else "  (none)"}
-
 ═══ ENTRIES TO TRANSLATE (JSON) ═══
 {entries_json}
 
 Return only the JSON array."""
 
 
-def call_claude(locale_code: str, entries: list, context: dict, client, model: str) -> dict:
+def call_claude(locale_code: str, entries: list, client, model: str) -> dict:
     """
     Returns { hash_id: {"translated": str, "unverified": bool} }
     """
-    prompt   = build_prompt(locale_code, entries, context)
+    prompt   = build_prompt(locale_code, entries)
     response = client.messages.create(
         model=model,
         max_tokens=8192,
@@ -496,7 +493,7 @@ def write_locale_file(
 def translate_locale(
     locale: str,
     enus_sections: list,
-    context: dict,
+    glossary: dict,
     tmap: dict,
     batch: dict,
     client,
@@ -523,9 +520,15 @@ def translate_locale(
     if client is None:
         return tmap
 
-    new_translations = call_claude(locale, entries, context, client, args.model)
+    new_translations = call_claude(locale, entries, client, args.model)
     if not new_translations:
         return tmap
+
+    # Apply verified terminology replacements (post-processing pass)
+    locale_glossary = glossary.get(locale, {})
+    if locale_glossary:
+        for entry in new_translations.values():
+            entry["translated"] = apply_glossary(entry["translated"], locale_glossary)
 
     print(f"  [{locale}] \u2713 Claude returned {len(new_translations)} translation(s).")
     tmap = dict(tmap)  # shallow copy
@@ -563,7 +566,7 @@ def main():
     enus_sections = parse_enus(enus_path.read_text(encoding="utf-8"))
     print(f"Loaded {len(enus_sections)} sections from {enus_path.name}")
 
-    context = json.loads(CONTEXT_FILE.read_text(encoding="utf-8-sig")) if CONTEXT_FILE.exists() else {}
+    glossary = json.loads(CONTEXT_FILE.read_text(encoding="utf-8-sig")) if CONTEXT_FILE.exists() else {}
 
     targets = [args.locale] if args.locale else SUPPORTED_LOCALES
 
@@ -663,7 +666,7 @@ def main():
             tmap.update(pre_translated[locale])
             print(f"  [{locale}] applied {len(pre_translated[locale])} pre-translated entries.")
         else:
-            tmap = translate_locale(locale, enus_sections, context, tmap, batch, client, args)
+            tmap = translate_locale(locale, enus_sections, glossary, tmap, batch, client, args)
 
         tmaps[locale] = tmap
 

@@ -192,30 +192,33 @@ def prune_locale(file_text: str, locale_sections: list,
 
 
 # ---------------------------------------------------------------------------
+# Glossary post-processing
+# ---------------------------------------------------------------------------
+
+def apply_glossary(text: str, glossary: dict) -> str:
+    """Replace English terms found in `text` with their verified locale equivalents.
+    Keys are applied longest-first to avoid partial-match clobbering.
+    Keys starting with '_' are metadata and are skipped.
+    """
+    for english in sorted(glossary, key=len, reverse=True):
+        if english.startswith("_"):
+            continue
+        target = glossary[english]
+        if isinstance(target, str) and english in text:
+            text = text.replace(english, target)
+    return text
+
+
+# ---------------------------------------------------------------------------
 # Build the translation prompt
 # ---------------------------------------------------------------------------
 
-def build_prompt(locale_code: str, missing_sections: list, context: dict) -> str:
+def build_prompt(locale_code: str, missing_sections: list) -> str:
     """missing_sections is a list of:
         {"id": sec_id, "title": en_title, "items": [{"id": item_id, "text": en_text}, ...]}
     Only items that need translation are present; a section with no title_needs_translation
     but with items is still included.
     """
-    lctx  = context.get(locale_code, {})
-    notes = lctx.get("_notes", {})
-
-    terms_lines = []
-    for term, val in lctx.items():
-        if term.startswith("_"):
-            continue
-        if isinstance(val, str):
-            terms_lines.append(f"  {term} → {val}")
-        elif isinstance(val, dict) and term == "Crest tiers":
-            for tid, tname in val.items():
-                terms_lines.append(f"  Crest tier [{tid}] → {tname}")
-
-    notes_lines = [f"  {k}: {v}" for k, v in notes.items()]
-
     # Build the items-to-translate block
     lines = []
     for sec in missing_sections:
@@ -230,24 +233,18 @@ def build_prompt(locale_code: str, missing_sections: list, context: dict) -> str
 You are translating a World of Warcraft addon from English to {locale_code}.
 This is checklist data – section titles and task descriptions for weekly WoW activities.
 
-\u2550\u2550\u2550 CRITICAL FORMAT RULES \u2550\u2550\u2550
-\u2022 Output ONLY lines matching one of these two patterns:
+══ CRITICAL FORMAT RULES ══
+• Output ONLY lines matching one of these two patterns:
       SOMEID = "translated value",
       SOMEID__title = "translated section title",
-\u2022 Do NOT write \\uXXXX unicode escapes \u2014 write literal UTF-8 characters only.
-\u2022 Preserve ALL % format specifiers exactly (%s, %d, \\n, etc.) \u2014 never translate them.
-\u2022 Do NOT add or remove entries. Translate exactly the entries listed below.
-\u2022 Append  -- \u26a0\ufe0f UNVERIFIED  after lines containing WoW-specific terms you are not 100% certain about.
-\u2022 Do not add commentary, code blocks, or explanations \u2014 only the assignment lines.
-\u2022 IDs (the left-hand side) must never be changed.
+• Do NOT write \\uXXXX unicode escapes — write literal UTF-8 characters only.
+• Preserve ALL % format specifiers exactly (%s, %d, \\n, etc.) — never translate them.
+• Do NOT add or remove entries. Translate exactly the entries listed below.
+• Append  -- ⚠️ UNVERIFIED  after lines containing WoW-specific terms you are not 100% certain about.
+• Do not add commentary, code blocks, or explanations — only the assignment lines.
+• IDs (the left-hand side) must never be changed.
 
-\u2550\u2550\u2550 VERIFIED WoW TERMINOLOGY for {locale_code} \u2550\u2550\u2550
-{chr(10).join(terms_lines) if terms_lines else "  (none provided)"}
-
-\u2550\u2550\u2550 IMPORTANT NOTES \u2550\u2550\u2550
-{chr(10).join(notes_lines) if notes_lines else "  (none)"}
-
-\u2550\u2550\u2550 ENTRIES TO TRANSLATE (English values shown) \u2550\u2550\u2550
+══ ENTRIES TO TRANSLATE (English values shown) ══
 {items_block}
 
 Return the translated lines only, preserving the entry order above."""
@@ -402,7 +399,7 @@ def parse_response(raw: str) -> dict:
 # Per-locale translation
 # ---------------------------------------------------------------------------
 
-def translate_locale(locale_code: str, enus_sections: list, context: dict,
+def translate_locale(locale_code: str, enus_sections: list, glossary: dict,
                      client, args) -> int:
     data_path = LOCALES_DIR / f"{locale_code}_Data.lua"
     if not data_path.exists():
@@ -481,13 +478,21 @@ def translate_locale(locale_code: str, enus_sections: list, context: dict,
         return total_items
 
     # ── Call Claude ───────────────────────────────────────────────────────
-    prompt = build_prompt(locale_code, work, context)
+    prompt = build_prompt(locale_code, work)
     response = client.messages.create(
         model=args.model,
         max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )
     translated = parse_response(response.content[0].text)
+
+    # ── Apply glossary post-processing ───────────────────────────────────
+    locale_glossary = glossary.get(locale_code, {})
+    if locale_glossary and translated:
+        translated = {
+            k: (apply_glossary(text, locale_glossary), unv)
+            for k, (text, unv) in translated.items()
+        }
 
     if not translated:
         print(f"  [{locale_code}] WARNING: API returned no translatable lines.")
@@ -580,7 +585,7 @@ def main():
         sys.exit(1)
 
     # ── Load shared resources ─────────────────────────────────────────────
-    context       = json.loads(CONTEXT_FILE.read_text(encoding="utf-8-sig"))
+    glossary      = json.loads(CONTEXT_FILE.read_text(encoding="utf-8-sig")) if CONTEXT_FILE.exists() else {}
     enus_sections = parse_data_file(enus_path.read_text(encoding="utf-8"))
     total_items   = sum(len(s["items"]) for s in enus_sections)
     print(f"Loaded {len(enus_sections)} sections / {total_items} items from {enus_path.name}")
@@ -604,7 +609,7 @@ def main():
     targets = [args.locale] if args.locale else SUPPORTED_LOCALES
     total   = 0
     for loc in targets:
-        total += translate_locale(loc, enus_sections, context, client, args)
+        total += translate_locale(loc, enus_sections, glossary, client, args)
 
     mode = "DRY RUN" if args.dry_run else "Done"
     print(f"\n{mode}. {total} item(s) translated across {len(targets)} locale(s).")
