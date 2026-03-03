@@ -1,0 +1,70 @@
+name: Cleanup Workflow Runs
+
+# Runs once a day.
+# - Successful "Publish Stable" / "Publish Alpha" runs are kept for 7 days,
+#   then deleted.
+# - Every other completed run is deleted immediately regardless of age.
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # 04:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  actions: write   # required to delete workflow runs
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delete workflow runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO:     ${{ github.repository }}
+          KEEP_THIS_RUN: ${{ github.run_id }}
+        run: |
+          # Successful runs of these workflows are kept for up to 7 days.
+          KEEP_NAMES=("Publish Stable" "Publish Alpha")
+          CUTOFF=$(date -u -d "7 days ago" +%s)
+
+          echo "Fetching all completed workflow runs..."
+
+          gh api "repos/$REPO/actions/runs?per_page=100&status=completed" \
+              --paginate \
+              -q '.workflow_runs[] | [(.id | tostring), .name, (.conclusion // "null"), .created_at] | @tsv' \
+          | while IFS=$'\t' read -r run_id run_name conclusion created_at; do
+
+              # Never delete the run that is currently executing this cleanup.
+              if [[ "$run_id" == "$KEEP_THIS_RUN" ]]; then
+                  echo "SKIP  (self)         [$run_id] $run_name"
+                  continue
+              fi
+
+              run_ts=$(date -d "$created_at" +%s 2>/dev/null || echo 0)
+              is_recent=false
+              if (( run_ts > CUTOFF )); then
+                  is_recent=true
+              fi
+
+              # Keep successful publish runs that are under 7 days old.
+              keep=false
+              if [[ "$is_recent" == "true" ]]; then
+                  for keeper in "${KEEP_NAMES[@]}"; do
+                      if [[ "$run_name" == "$keeper" && "$conclusion" == "success" ]]; then
+                          keep=true
+                          break
+                      fi
+                  done
+              fi
+
+              if [[ "$keep" == "true" ]]; then
+                  echo "KEEP  ($conclusion)  [$run_id] $run_name ($created_at)"
+              else
+                  echo "DELETE ($conclusion) [$run_id] $run_name ($created_at)"
+                  gh api -X DELETE "repos/$REPO/actions/runs/$run_id" \
+                      --silent || echo "  (already gone or permission denied)"
+              fi
+          done
+
+          echo "Cleanup complete."
