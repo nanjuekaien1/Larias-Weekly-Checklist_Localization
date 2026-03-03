@@ -33,14 +33,7 @@ local DATASET = {
             { id = "c886190c", text = "Completa el logro Picos Más Altos para renombre - consulta el documento para la guía" }, -- ⚠️ UNVERIFIED
             { id = "f9b8eb01", text = "Completa cadenas de misiones secundarias para renombre. (se puede hacer con alts para subir de nivel al mismo tiempo). El bonus de FLO no otorga renombre." },
             { id = "11425027", text = "Nota: Solo los abalorios de campeón de renombre de Singularidad Y Eversong están disponibles en el acceso anticipado - los demás estarán disponibles el lunes después del lanzamiento oficial o después del reinicio semanal de cada región." }, -- ⚠️ UNVERIFIED
-        },
-    },
-
-    {
-        id = "eae61254",
-        title = "Actualización de Emergencia - 2 de Marzo",
-        items = {
-            { id = "2c77c3c4", text = "Completa la Velada de Saltheril semanal en el Bosque de Canción Eterna. ¡ACABA DE ABRIRSE, TIENES QUE COMPLETARLA ANTES DEL REINICIO SEMANAL! No olvides recoger la misión de renombre para el yelmo de campeón si tienes el renombre" },
+            { id = "ba1890e4", text = "Completa la Velada de Saltheril semanal en el Bosque de Canción Eterna. No olvides conseguir la misión de renombre para el yelmo de campeón si tienes el renombre" },
         },
     },
 
@@ -52,7 +45,7 @@ local DATASET = {
             { id = "c06ee1a3", text = "Si estás en un alt y no ves algunas de estas misiones, ve a Soridormi en la Posada de Lunargenta y elige \"Detuve la Tormenta del Vacío\" para saltarte la campaña." }, -- ⚠️ UNVERIFIED
             { id = "6b199064", text = "Sube el renombre de la Singularidad a rango 7 para abalorio de campeón 1/6 - disponible en acceso anticipado - proviene de misión del vendedor de renombre (no se compra)" },
             { id = "2a9b4f4c", text = "Sube el renombre de Hara'ti a rango 8 para cinturón de campeón 1/6 - NO DISPONIBLE EN ACCESO ANTICIPADO - proviene de misión del vendedor de renombre (no se compra)" }, -- ⚠️ UNVERIFIED
-            { id = "6f39070d", text = "Sube el renombre de Luna de Plata a rango 9 para yelmo de campeón 1/6 - NO DISPONIBLE EN ACCESO ANTICIPADO - proviene de misión del vendedor de renombre (no se compra)" },
+            { id = "d9a7e304", text = "Sube el renombre de Lunargenta al rango 9 para obtener 1/6 del yelmo de campeón - disponible en acceso anticipado - se obtiene de una misión del vendedor de renombre (no se compra)" },
             { id = "6ba4afc1", text = "Sube el renombre de Tribu Amani a rango 9 para collar de campeón 1/6 - NO DISPONIBLE EN ACCESO ANTICIPADO - proviene de misión del vendedor de renombre (no se compra)" },
             { id = "101e78a9", text = "Completa la misión semanal de mazmorras de Halduron Ala Luminosa para 1000 de renombre" }, -- ⚠️ UNVERIFIED
             { id = "0c3b8835", text = "Completa la misión semanal de evento de mundo para cofre de pináculo de Lady Liadrin - puedes recoger la misión de evento semanal y hacerla con los eventos de abajo" }, -- ⚠️ UNVERIFIED

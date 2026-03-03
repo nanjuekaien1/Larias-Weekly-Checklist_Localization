@@ -33,14 +33,7 @@ local DATASET = {
             { id = "c886190c", text = "Terminez le haut fait Pics les Plus Élevés pour du renom - voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
             { id = "f9b8eb01", text = "Terminez les chaînes de quêtes secondaires pour du renom. (peut être fait sur les rerolls pour monter de niveau en même temps). Le bonus de la Foire de Sombrelune ne donne pas de renom." },
             { id = "11425027", text = "Note : Seuls les bijoux de renom de champion de Singularité ET Bois-des-Chants sont disponibles en accès anticipé - les autres deviendront disponibles soit lundi après le lancement officiel, soit après la réinitialisation hebdomadaire de chaque région." },
-        },
-    },
-
-    {
-        id = "eae61254",
-        title = "Mise à jour d'urgence - 2 mars",
-        items = {
-            { id = "2c77c3c4", text = "Terminez la soirée de Saltheril hebdomadaire dans les Bois-des-Chants. CELA VIENT JUSTE D'OUVRIR, VOUS DEVEZ TERMINER AVANT LA RÉINITIALISATION HEBDOMADAIRE ! N'oubliez pas de prendre la quête de renom pour le casque de champion si vous avez le renom" },
+            { id = "ba1890e4", text = "Terminez la Soirée de Saltheril hebdomadaire dans les Bois des Chants éternels. N'oubliez pas de prendre la quête de renom pour le heaume de champion si vous avez le renom" },
         },
     },
 
@@ -52,7 +45,7 @@ local DATASET = {
             { id = "c06ee1a3", text = "Si vous êtes sur un reroll et ne voyez pas certaines de ces quêtes, allez voir Soridormi à l'auberge de Lune-d'Argent et choisissez « J'ai arrêté le Voidstorm » pour passer la campagne." }, -- ⚠️ UNVERIFIED
             { id = "6b199064", text = "Montez la renommée de la Singularité au rang 7 pour le bijou champion 1/6 - disponible en accès anticipé - vient d'une quête du vendeur de renommée (pas acheté)" },
             { id = "2a9b4f4c", text = "Montez la renommée des Hara'ti au rang 8 pour la ceinture champion 1/6 - NON DISPONIBLE EN ACCÈS ANTICIPÉ - vient d'une quête du vendeur de renommée (pas achetée)" },
-            { id = "6f39070d", text = "Montez la renommée de Lune-d'Argent au rang 9 pour le heaume champion 1/6 - NON DISPONIBLE EN ACCÈS ANTICIPÉ - vient d'une quête du vendeur de renommée (pas acheté)" },
+            { id = "d9a7e304", text = "Augmentez le renom de Lune-d'argent au rang 9 pour le heaume de champion 1/6 - disponible en accès anticipé - provient d'une quête du vendeur de renom (non acheté)" },
             { id = "6ba4afc1", text = "Montez la renommée de la tribu Amani au rang 9 pour le collier champion 1/6 - NON DISPONIBLE EN ACCÈS ANTICIPÉ - vient d'une quête du vendeur de renommée (pas acheté)" },
             { id = "101e78a9", text = "Terminez la quête de donjon hebdomadaire de Halduron Brightewing pour 1000 de renom" }, -- ⚠️ UNVERIFIED
             { id = "0c3b8835", text = "Terminez la quête d'événement mondial hebdomadaire pour un coffre apogée auprès de Dame Liadrin - vous pouvez prendre la quête d'événement hebdomadaire et la faire avec les événements ci-dessous" }, -- ⚠️ UNVERIFIED

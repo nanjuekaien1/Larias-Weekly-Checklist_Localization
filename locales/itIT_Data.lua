@@ -33,14 +33,7 @@ local DATASET = {
             { id = "c886190c", text = "Completa l'impresa Vette Più Alte per rinomanza - vedi la documentazione per la guida" }, -- ⚠️ UNVERIFIED
             { id = "f9b8eb01", text = "Completa le catene di missioni secondarie per rinomanza. (può essere fatto con gli alt per livellare contemporaneamente). Il buff della FdL non dà rinomanza." }, -- ⚠️ UNVERIFIED
             { id = "11425027", text = "Nota: Solo i monili della fama dei campioni Singolarità E Cantoeterna sono disponibili nell'accesso anticipato - gli altri diventeranno disponibili lunedì dopo il lancio ufficiale o dopo il reset settimanale di ogni regione." }, -- ⚠️ UNVERIFIED
-        },
-    },
-
-    {
-        id = "eae61254",
-        title = "Aggiornamento d'Emergenza - 2 Marzo",
-        items = {
-            { id = "2c77c3c4", text = "Completa il Ricevimento di Saltheril settimanale nei Boschi di Cantoeterna. È APPENA INIZIATO, DEVI COMPLETARLO PRIMA DEL RESET SETTIMANALE! Non dimenticare di prendere la missione di fama per l'elmo del campione se hai la fama necessaria" }, -- ⚠️ UNVERIFIED
+            { id = "ba1890e4", text = "Completa il Ricevimento di Saltheril settimanale nei Boschi di Cantaluna. Non dimenticare di prendere la missione di fama per l'elmo del campione se hai la fama necessaria" },
         },
     },
 
@@ -52,7 +45,7 @@ local DATASET = {
             { id = "c06ee1a3", text = "Se sei su un alt e non vedi alcune di queste missioni, vai da Soridormi nella Locanda di Lunargenta e scegli \"Ho Fermato la Tempesta del Vuoto\" per saltare la campagna." }, -- ⚠️ UNVERIFIED
             { id = "6b199064", text = "Porta la fama della Singolarità al rango 7 per il monile del campione 1/6 - disponibile nell'accesso anticipato - ottenuto da una missione del venditore di fama (non acquistato)" },
             { id = "2a9b4f4c", text = "Porta la fama di Hara'ti al rango 8 per la cintura del campione 1/6 - NON DISPONIBILE NELL'ACCESSO ANTICIPATO - ottenuta da una missione del venditore di fama (non acquistata)" },
-            { id = "6f39070d", text = "Porta la fama di Lunargenta al rango 9 per l'elmo del campione 1/6 - NON DISPONIBILE NELL'ACCESSO ANTICIPATO - ottenuto da una missione del venditore di fama (non acquistato)" },
+            { id = "d9a7e304", text = "Aumenta la fama di Lunargenta al rango 9 per l'elmo del campione 1/6 - disponibile nell'accesso anticipato - proviene dalla missione del venditore di fama (non acquistato)" },
             { id = "6ba4afc1", text = "Porta la fama della Tribù Amani al rango 9 per la collana del campione 1/6 - NON DISPONIBILE NELL'ACCESSO ANTICIPATO - ottenuta da una missione del venditore di fama (non acquistata)" },
             { id = "101e78a9", text = "Completa la missione settimanale del dungeon da Halduron Ali Lucenti per 1000 rinomanza" }, -- ⚠️ UNVERIFIED
             { id = "0c3b8835", text = "Completa la missione settimanale dell'evento mondiale per una cassa apice da Lady Liadrin - puoi prendere la missione dell'evento settimanale e farla con gli eventi sotto" },

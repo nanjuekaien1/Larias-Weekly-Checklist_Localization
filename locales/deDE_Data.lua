@@ -33,14 +33,7 @@ local DATASET = {
             { id = "c886190c", text = "Schließe den Erfolg Höchste Gipfel für Ruhm ab - siehe Dokument für Anleitung" },
             { id = "f9b8eb01", text = "Schließe Nebenquestreihen für Ruhm ab. (kann auf Twinks erledigt werden, um gleichzeitig zu leveln). DMF-Buff gibt keinen Ruhm." },
             { id = "11425027", text = "Hinweis: Nur das Singularitäts- UND Eversong-Champion-Ruhm-Trinket sind im Early Access verfügbar - die anderen werden entweder am Montag nach dem offiziellen Start oder nach dem wöchentlichen Reset jeder Region verfügbar." },
-        },
-    },
-
-    {
-        id = "eae61254",
-        title = "Notfall-Update - 2. März",
-        items = {
-            { id = "2c77c3c4", text = "Schließe die wöchentliche Salthérils Soiree in den Ewigen Wäldern ab. DIES HAT GERADE GEÖFFNET, DU MUSST ES VOR DEM WÖCHENTLICHEN RESET ABSCHLIESSEN! Vergiss nicht, die Ruhmquest für den Champion-Helm zu holen, wenn du den Ruhm hast" },
+            { id = "ba1890e4", text = "Schließe die wöchentliche Saltheril's Soiree in den Immersangwäldern ab. Vergiss nicht, die Ruhmquest für den Championhelm zu holen, wenn du den Ruhm hast" }, -- ⚠️ UNVERIFIED
         },
     },
 
@@ -52,7 +45,7 @@ local DATASET = {
             { id = "c06ee1a3", text = "Wenn du auf einem Twink bist und einige dieser Quests nicht siehst, gehe zu Soridormi im Gasthaus von Silbermond und wähle \"Ich habe den Leerensturm gestoppt\", um die Kampagne zu überspringen." },
             { id = "6b199064", text = "Erhöhe den Ruhm der Singularität auf Rang 7 für 1/6 Champions-Trinket - im Early Access verfügbar - kommt von einer Quest vom Ruhmhändler (nicht gekauft)" }, -- ⚠️ UNVERIFIED
             { id = "2a9b4f4c", text = "Erhöhe den Ruhm von Hara'ti auf Rang 8 für 1/6 Champions-Gürtel - NICHT IM EARLY ACCESS VERFÜGBAR - kommt von einer Quest vom Ruhmhändler (nicht gekauft)" }, -- ⚠️ UNVERIFIED
-            { id = "6f39070d", text = "Erhöhe den Ruhm von Silbermond auf Rang 9 für 1/6 Champions-Helm - NICHT IM EARLY ACCESS VERFÜGBAR - kommt von einer Quest vom Ruhmhändler (nicht gekauft)" },
+            { id = "d9a7e304", text = "Erhöhe den Silbermond-Ruhm auf Rang 9 für 1/6 Championhelm - verfügbar im Early Access - kommt von einer Quest vom Ruhmhändler (nicht gekauft)" }, -- ⚠️ UNVERIFIED
             { id = "6ba4afc1", text = "Erhöhe den Ruhm des Amani-Stamms auf Rang 9 für 1/6 Champions-Halskette - NICHT IM EARLY ACCESS VERFÜGBAR - kommt von einer Quest vom Ruhmhändler (nicht gekauft)" },
             { id = "101e78a9", text = "Schließe die wöchentliche Dungeonquest von Halduron Hellfittich für 1000 Ruhm ab" },
             { id = "0c3b8835", text = "Schließe die wöchentliche Weltereignisquest für Gipfeltruhe von Lady Liadrin ab - kann wöchentliche Ereignisquest annehmen und mit den untenstehenden Ereignissen erledigen" },

@@ -33,14 +33,7 @@ local DATASET = {
             { id = "c886190c", text = "Complete a conquista Picos Mais Altos para renome - veja o doc para guia" },
             { id = "f9b8eb01", text = "Complete cadeias de missões secundárias para renome. (pode ser feito em personagens alternativos para upar ao mesmo tempo). O bônus da FDL não dá renome." },
             { id = "11425027", text = "Nota: Apenas os troféus de renome de campeão da Singularidade E de Canção Eterna estão disponíveis no acesso antecipado - os outros ficarão disponíveis na segunda-feira após o lançamento oficial ou após a reinicialização semanal de cada região." },
-        },
-    },
-
-    {
-        id = "eae61254",
-        title = "Atualização Emergencial - 2 de Março",
-        items = {
-            { id = "2c77c3c4", text = "Complete a Festa de Saltheril semanal em Bosque de Canção Eterna. ISSO ACABOU DE ABRIR, VOCÊ TEM QUE COMPLETAR ANTES DA REINICIALIZAÇÃO SEMANAL! Não se esqueça de pegar a missão de renome para o elmo de campeão se você tiver o renome" },
+            { id = "ba1890e4", text = "Complete o Soirée de Saltheril semanal em Floresta de Perpetuma. Não esqueça de pegar a missão de renome para o elmo de campeão se você tiver o renome" },
         },
     },
 
@@ -52,7 +45,7 @@ local DATASET = {
             { id = "c06ee1a3", text = "Se você está em um personagem alternativo e não vê algumas dessas missões, vá até Soridormi na Estalagem de Lua Prateada e escolha \"Eu Detive a Tempestade Etérea\" para pular a campanha." }, -- ⚠️ UNVERIFIED
             { id = "6b199064", text = "Aumente o renome da Singularidade para posto 7 para 1/6 berloque de campeão - disponível no acesso antecipado - vem de missão do vendedor de renome (não é comprado)" },
             { id = "2a9b4f4c", text = "Aumente o renome de Hara'ti para posto 8 para 1/6 cinto de campeão - NÃO DISPONÍVEL NO ACESSO ANTECIPADO - vem de missão do vendedor de renome (não é comprado)" },
-            { id = "6f39070d", text = "Aumente o renome de Luaprata para posto 9 para 1/6 elmo de campeão - NÃO DISPONÍVEL NO ACESSO ANTECIPADO - vem de missão do vendedor de renome (não é comprado)" }, -- ⚠️ UNVERIFIED
+            { id = "d9a7e304", text = "Aumente o renome de Luaprata para rank 9 para 1/6 do elmo de campeão - disponível no acesso antecipado - vem da missão do vendedor de renome (não é comprado)" },
             { id = "6ba4afc1", text = "Aumente o renome da Tribo Amani para posto 9 para 1/6 colar de campeão - NÃO DISPONÍVEL NO ACESSO ANTECIPADO - vem de missão do vendedor de renome (não é comprado)" },
             { id = "101e78a9", text = "Complete a missão semanal de masmorra de Halduron Asa Brilhante para 1000 de renome" },
             { id = "0c3b8835", text = "Complete a missão semanal de evento mundial para baú de pináculo de Lady Liadrin - pode pegar a missão de evento semanal e fazê-la com os eventos abaixo" },
