@@ -75,7 +75,7 @@ _addon_root = (
 )
 ENUS_DATA_FILE = _addon_root / "Locales" / "enUS_Data.lua"
 
-SUPPORTED_LOCALES = ["deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU"]
+SUPPORTED_LOCALES = ["deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN"]
 
 LOCALE_NAMES = {
     "deDE": "German",
@@ -86,6 +86,7 @@ LOCALE_NAMES = {
     "koKR": "Korean",
     "ptBR": "Portuguese (Brazil)",
     "ruRU": "Russian",
+    "zhCN": "Chinese Simplified",
 }
 
 # ---------------------------------------------------------------------------
@@ -461,6 +462,7 @@ LOCALE_NATIVE = {
     "koKR": "Korean",
     "ptBR": "Portuguese (Brazil)",
     "ruRU": "Russian",
+    "zhCN": "Chinese Simplified",
 }
 
 

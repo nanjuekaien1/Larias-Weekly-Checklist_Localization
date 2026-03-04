@@ -53,7 +53,7 @@ _addon_root  = (pathlib.Path(os.environ["MAIN_ADDON_PATH"])
                 else REPO_ROOT.parent / "Larias-Weekly-Midnight-Checklist")
 ENUS_FILE    = _addon_root / "locales" / "enUS_Data.lua"
 
-SUPPORTED_LOCALES = ["deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU"]
+SUPPORTED_LOCALES = ["deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN"]
 
 # ---------------------------------------------------------------------------
 # Data file parser
