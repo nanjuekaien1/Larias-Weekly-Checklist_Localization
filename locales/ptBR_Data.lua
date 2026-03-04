@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Entre com cada personagem que você planeja upar para que eles comecem a acumular XP de descanso." },
             { id = "90db618c", text = "Suba personagens com modo guerra ativado até 90 - A FDL abre no domingo para 10% de exp a mais." },
             { id = "6af1d802", text = "Complete o Assalto Stormarion semanal na Tempestade Etérea. (Está disponível no Acesso Antecipado)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Estes têm bloqueio semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Este é um bônus único para cada raro e não reseta semanalmente." },
             { id = "2687fe6c", text = "Procure os tesouros de cada região para Renome grátis. Veja o doc para guia" },
             { id = "91e7ee6c", text = "Complete 4x Presa em dificuldade normal para renome" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Complete a conquista Caçador de Tradições de Midnight para renome - veja o doc para guia" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Complete o Evento de Abundância semanal em Zul'Aman." },
             { id = "dbc8384b", text = "Complete o evento semanal Lendas dos Haranir em Harandar." },
             { id = "9ad64245", text = "Complete o Assalto de Stormarion semanal na Voragem do Vázio." },
-            { id = "35bc0cfd", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Estes têm bloqueio semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Este é um bônus único para cada raro e não reseta semanalmente." },
             { id = "1b42ce30", text = "Se não foi feito, procure os tesouros de cada região, caçador de tradições e picos altos para Renome grátis. Veja o doc para guia" },
             { id = "a892ac44", text = "Desbloqueie Escavações até o nível 8" },
-            { id = "9bc44f02", text = "Complete 2x Presa Difícil para equipamento Veterano em cada personagem - se tiver apenas um personagem, faça 4x em um personagem para renome" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Complete 4x Presa Difícil para equipamento Veterano e emblemas Veteranos em cada personagem" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Complete 2x Presa Difícil aleatória para emblemas Veteranos em cada personagem - fazendo 2x opcionais por semana alcançará o limite de emblemas Veteranos até o final da semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Complete um tour mundial das masmorras M0 - recompensa nível de item veteranário - não melhore ainda" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Complete o Evento de Abundância semanal em Zul'Aman." },
             { id = "dbc8384b", text = "Complete o evento semanal Lendas dos Haranir em Harandar." },
             { id = "9ad64245", text = "Complete o Assalto de Stormarion semanal na Voragem do Vázio." },
-            { id = "35bc0cfd", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Estes têm bloqueio semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mate cada raro uma vez em cada zona para renome. Este é um bônus único para cada raro e não reseta semanalmente." },
             { id = "23cb93ed", text = "Desbloqueie Escavações até o nível 8 se ainda não tiver feito" },
-            { id = "9bc44f02", text = "Complete 2x Presa Difícil para equipamento Veterano em cada personagem - se tiver apenas um personagem, faça 4x em um personagem para renome" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Complete 4x Presa Difícil para equipamento Veterano e emblemas Veteranos em cada personagem" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Complete 2x Presa Difícil aleatória para emblemas Veteranos em cada personagem - fazendo 2x opcionais por semana alcançará o limite de emblemas Veteranos até o final da semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Complete um tour mundial das masmorras M0 - recompensa nível de item veteranário - não melhore ainda" },
             { id = "c33e5c84", text = "Se for raidy na terça dia 17, crie itens. Veja o documento para mais informações." },
         },

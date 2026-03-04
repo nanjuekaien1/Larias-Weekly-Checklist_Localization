@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Accedi con ogni personaggio che intendi livellare in modo che inizi ad accumulare PE riposo." },
             { id = "90db618c", text = "Livella i personaggi in modalità guerra fino a 90 - la FdL apre domenica per il 10% di ESP in più." }, -- ⚠️ UNVERIFIED
             { id = "6af1d802", text = "Completa l'Assalto Stormarion settimanale nella Tempesta del Vuoto. (È disponibile nell'Accesso Anticipato)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Opzionale) Uccidi ogni raro una volta in ogni zona per rinomanza. Questi hanno un blocco settimanale per ogni raro." },
+            { id = "6762e305", text = "(Facoltativo) Uccidi ogni raro una volta in ogni zona per reputazione. Questo è un bonus una tantum per ogni raro e non si resetta settimanalmente." },
             { id = "2687fe6c", text = "Cerca i tesori di ogni regione per Rinomanza gratuita. Vedi la documentazione per la guida" },
             { id = "91e7ee6c", text = "Completa 4x Preda in difficoltà normale per rinomanza" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Completa l'impresa Cacciatore delle Leggende di Midnight per rinomanza - vedi la documentazione per la guida" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa l'Evento dell'abbondanza settimanale a Zul'Aman." },
             { id = "dbc8384b", text = "Completa l'evento Leggende degli Haranir settimanale a Harandar." },
             { id = "9ad64245", text = "Completa l'Assalto di Stormarion settimanale nella Tempesta del Vuoto." },
-            { id = "35bc0cfd", text = "(Opzionale) Uccidi ogni raro una volta in ogni zona per rinomanza. Questi hanno un blocco settimanale per ogni raro." },
+            { id = "6762e305", text = "(Facoltativo) Uccidi ogni raro una volta in ogni zona per reputazione. Questo è un bonus una tantum per ogni raro e non si resetta settimanalmente." },
             { id = "1b42ce30", text = "Se non fatto, cerca i tesori di ogni regione, il cacciatore delle leggende e le vette alte per Rinomanza gratuita. Vedi la documentazione per la guida" }, -- ⚠️ UNVERIFIED
             { id = "a892ac44", text = "Sblocca le Spedizioni fino al livello 8" },
-            { id = "9bc44f02", text = "Completa 2x Preda Difficile per equipaggiamento Veterano su ogni personaggio - se solo un personaggio, fai 4x su un personaggio per rinomanza" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4x Preda Difficile per equipaggiamento Veterano e stemmi Veterani su ogni personaggio" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Facoltativo) Completa 2x Preda Difficile casuali per stemmi Veterani su ogni personaggio - completando 2x facoltativi a settimana raggiungerai il massimo di stemmi Veterani entro la fine della settimana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mondiale dei dungeon M0 - ricompensa livello oggetto veterano - non potenziare ancora" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa l'Evento dell'abbondanza settimanale a Zul'Aman." },
             { id = "dbc8384b", text = "Completa l'evento Leggende degli Haranir settimanale a Harandar." },
             { id = "9ad64245", text = "Completa l'Assalto di Stormarion settimanale nella Tempesta del Vuoto." },
-            { id = "35bc0cfd", text = "(Opzionale) Uccidi ogni raro una volta in ogni zona per rinomanza. Questi hanno un blocco settimanale per ogni raro." },
+            { id = "6762e305", text = "(Facoltativo) Uccidi ogni raro una volta in ogni zona per reputazione. Questo è un bonus una tantum per ogni raro e non si resetta settimanalmente." },
             { id = "23cb93ed", text = "Sblocca le Spedizioni fino al livello 8 se non ancora fatto" },
-            { id = "9bc44f02", text = "Completa 2x Preda Difficile per equipaggiamento Veterano su ogni personaggio - se solo un personaggio, fai 4x su un personaggio per rinomanza" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4x Preda Difficile per equipaggiamento Veterano e stemmi Veterani su ogni personaggio" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Facoltativo) Completa 2x Preda Difficile casuali per stemmi Veterani su ogni personaggio - completando 2x facoltativi a settimana raggiungerai il massimo di stemmi Veterani entro la fine della settimana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mondiale dei dungeon M0 - ricompensa livello oggetto veterano - non potenziare ancora" },
             { id = "c33e5c84", text = "Se radi martedì 17, crafta. Consulta il documento per ulteriori informazioni." },
         },

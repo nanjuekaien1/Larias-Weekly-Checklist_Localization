@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Inicia sesión con cada personaje que planees subir de nivel para que empiecen a acumular experiencia de descanso." },
             { id = "90db618c", text = "Sube personajes con modo de guerra activado al 90 - La FDL abre el domingo para obtener 10% más de exp." },
             { id = "6af1d802", text = "Completa el Asalto de Stormarion semanal en la Tormenta del Vacío. (Está disponible en Acceso Anticipado)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "2687fe6c", text = "Busca los tesoros de cada región para obtener Renombre gratis. Ve la guía en el documento" },
             { id = "91e7ee6c", text = "Completa 4 Presas en dificultad normal para renombre" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Completa el logro Cazador de Tradiciones de Medianoche para renombre - ve la guía en el documento" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa el Evento de la abundancia semanal en Zul'Aman." },
             { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
             { id = "9ad64245", text = "Completa el Asalto de Tormarión semanal en la Tormenta del Vacío." },
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "1b42ce30", text = "Si no está hecho, busca los tesoros de cada región, cazador de tradiciones y picos altos para obtener Renombre gratis. Ve la guía en el documento" }, -- ⚠️ UNVERIFIED
             { id = "a892ac44", text = "Desbloquea Cavernas hasta el nivel 8" },
-            { id = "9bc44f02", text = "Completa 2 Presas Difíciles para equipo Veterano en cada personaje - si solo tienes un personaje, haz 4 en un personaje para renombre" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4x Presa Difícil para equipo Veterano y emblemas Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Completa 2x Presa Difícil aleatorias para emblemas Veteranos en cada personaje - hacer 2x opcionales por semana alcanzará el límite de emblemas Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa el Evento de la abundancia semanal en Zul'Aman." },
             { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
             { id = "9ad64245", text = "Completa el Asalto de Tormarión semanal en la Tormenta del Vacío." },
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "23cb93ed", text = "Desbloquea Cavernas hasta el nivel 8 si aún no lo has hecho" },
-            { id = "9bc44f02", text = "Completa 2 Presas Difíciles para equipo Veterano en cada personaje - si solo tienes un personaje, haz 4 en un personaje para renombre" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4x Presa Difícil para equipo Veterano y emblemas Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Completa 2x Presa Difícil aleatorias para emblemas Veteranos en cada personaje - hacer 2x opcionales por semana alcanzará el límite de emblemas Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
             { id = "c33e5c84", text = "Si raideas el martes 17, craftea. Mira el documento para más info." },
         },

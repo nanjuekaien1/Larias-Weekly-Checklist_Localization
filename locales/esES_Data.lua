@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Inicia sesión con cada personaje que planees subir de nivel para que empiecen a acumular EXP de descanso." },
             { id = "90db618c", text = "Sube personajes hasta nivel 90 con modo guerra activado - La FLO abre el domingo para 10% más de exp." },
             { id = "6af1d802", text = "Completa el Asalto de Tormarión semanal en la Tormenta del Vacío. (Está disponible en Acceso Anticipado)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata a cada raro una vez en cada zona para obtener renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "2687fe6c", text = "Busca los tesoros de cada región para Renombre gratis. Consulta el documento para la guía" },
             { id = "91e7ee6c", text = "Completa 4x Presa en dificultad normal para renombre" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Completa el logro Cazador de Tradiciones de Medianoche para renombre - consulta el documento para la guía" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa el Evento de la abundancia semanal en Zul'Aman." },
             { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
             { id = "9ad64245", text = "Completa el Asalto de Stormarion semanal en la Tormenta del vacío." },
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata a cada raro una vez en cada zona para obtener renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "1b42ce30", text = "Si no está hecho, busca los tesoros de cada región, cazador de tradiciones y picos altos para Renombre gratis. Consulta el documento para la guía" }, -- ⚠️ UNVERIFIED
             { id = "a892ac44", text = "Desbloquea las Profundidades hasta el nivel 8" },
-            { id = "9bc44f02", text = "Completa 2x Presa Difícil para equipo Veterano en cada personaje - si solo tienes un personaje, haz 4x en un personaje para renombre" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4 Presa Difícil para obtener equipo Veterano y blasones Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Completa 2 Presa Difícil aleatorias para obtener blasones Veteranos en cada personaje - haciendo 2 opcionales por semana alcanzarás el límite de blasones Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Completa el Evento de la abundancia semanal en Zul'Aman." },
             { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
             { id = "9ad64245", text = "Completa el Asalto de Stormarion semanal en la Tormenta del vacío." },
-            { id = "35bc0cfd", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Estos tienen un bloqueo semanal para cada raro." },
+            { id = "6762e305", text = "(Opcional) Mata a cada raro una vez en cada zona para obtener renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "23cb93ed", text = "Desbloquea las Profundidades hasta el nivel 8 si aún no lo has hecho" },
-            { id = "9bc44f02", text = "Completa 2x Presa Difícil para equipo Veterano en cada personaje - si solo tienes un personaje, haz 4x en un personaje para renombre" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Completa 4 Presa Difícil para obtener equipo Veterano y blasones Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Opcional) Completa 2 Presa Difícil aleatorias para obtener blasones Veteranos en cada personaje - haciendo 2 opcionales por semana alcanzarás el límite de blasones Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
             { id = "c33e5c84", text = "Si raideas el martes 17, fabrica. Consulta el documento para más información." },
         },

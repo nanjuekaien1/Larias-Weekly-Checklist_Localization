@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Logge dich mit jedem Charakter ein, den du leveln möchtest, damit sie anfangen, Erholt-EP zu sammeln." },
             { id = "90db618c", text = "Level Charaktere mit Kriegsmodus auf 90 - DMF öffnet Sonntag für 10% mehr EP." },
             { id = "6af1d802", text = "Schließe den wöchentlichen Stormarion-Angriff im Leerensturm ab. (Er ist im Frühen Zugang verfügbar)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Optional) Töte jeden seltenen Gegner einmal in jeder Zone für Ruhm. Diese haben eine wöchentliche Sperre für jeden seltenen Gegner." },
+            { id = "6762e305", text = "(Optional) Töte jede seltene Kreatur einmal in jeder Zone für Ruhm. Dies ist ein einmaliger Bonus für jede seltene Kreatur und wird nicht wöchentlich zurückgesetzt." },
             { id = "2687fe6c", text = "Jage die Schätze jeder Region für kostenlosen Ruhm. Siehe Dokument für Anleitung" },
             { id = "91e7ee6c", text = "Schließe 4x Beute im normalen Schwierigkeitsgrad für Ruhm ab" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Schließe den Erfolg Mitternachts-Geschichtsjäger für Ruhm ab - siehe Dokument für Anleitung" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Wöchentliches Überfluss-Ereignis in Zul'Aman abschließen." },
             { id = "dbc8384b", text = "Wöchentliches Legenden der Haranir-Ereignis in Harandar abschließen." },
             { id = "9ad64245", text = "Wöchentlichen Sturmarion-Angriff im Nichtsturm abschließen." },
-            { id = "35bc0cfd", text = "(Optional) Töte jeden seltenen Gegner einmal in jeder Zone für Ruhm. Diese haben eine wöchentliche Sperre für jeden seltenen Gegner." },
+            { id = "6762e305", text = "(Optional) Töte jede seltene Kreatur einmal in jeder Zone für Ruhm. Dies ist ein einmaliger Bonus für jede seltene Kreatur und wird nicht wöchentlich zurückgesetzt." },
             { id = "1b42ce30", text = "Falls noch nicht erledigt, jage die Schätze jeder Region, Geschichtsjäger und hohe Gipfel für kostenlosen Ruhm. Siehe Dokument für Anleitung" },
             { id = "a892ac44", text = "Schalte Tiefen bis Stufe 8 frei" },
-            { id = "9bc44f02", text = "Schließe 2x Schwere Beute für Veteranen-Ausrüstung auf jedem Charakter ab - falls nur ein Charakter, mache 4x auf einem Charakter für Ruhm" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Schließe 4x Harte Beute für Veteranenausrüstung und Veteranenwappen auf jedem Charakter ab" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Optional) Schließe 2x zufällige Harte Beute für Veteranenwappen auf jedem Charakter ab - wenn du 2x optional pro Woche machst, erreichst du die Obergrenze für Veteranenwappen bis zum Ende von Woche 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Welttour der M0-Dungeons abschließen – Veteran-Gs – noch nicht aufwerten" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Wöchentliches Überfluss-Ereignis in Zul'Aman abschließen." },
             { id = "dbc8384b", text = "Wöchentliches Legenden der Haranir-Ereignis in Harandar abschließen." },
             { id = "9ad64245", text = "Wöchentlichen Sturmarion-Angriff im Nichtsturm abschließen." },
-            { id = "35bc0cfd", text = "(Optional) Töte jeden seltenen Gegner einmal in jeder Zone für Ruhm. Diese haben eine wöchentliche Sperre für jeden seltenen Gegner." },
+            { id = "6762e305", text = "(Optional) Töte jede seltene Kreatur einmal in jeder Zone für Ruhm. Dies ist ein einmaliger Bonus für jede seltene Kreatur und wird nicht wöchentlich zurückgesetzt." },
             { id = "23cb93ed", text = "Schalte Tiefen bis Stufe 8 frei, falls noch nicht geschehen" },
-            { id = "9bc44f02", text = "Schließe 2x Schwere Beute für Veteranen-Ausrüstung auf jedem Charakter ab - falls nur ein Charakter, mache 4x auf einem Charakter für Ruhm" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Schließe 4x Harte Beute für Veteranenausrüstung und Veteranenwappen auf jedem Charakter ab" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Optional) Schließe 2x zufällige Harte Beute für Veteranenwappen auf jedem Charakter ab - wenn du 2x optional pro Woche machst, erreichst du die Obergrenze für Veteranenwappen bis zum Ende von Woche 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Welttour der M0-Dungeons abschließen – Veteran-Gs – noch nicht aufwerten" },
             { id = "c33e5c84", text = "Falls du Dienstag den 17. raidest, craften. Dokument für mehr Infos lesen." },
         },

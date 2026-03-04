@@ -26,7 +26,7 @@ local DATASET = {
             { id = "f4b92a82", text = "Connectez-vous sur chaque personnage que vous prévoyez de monter de niveau afin qu'ils commencent à accumuler de l'XP reposée." },
             { id = "90db618c", text = "Montez les personnages en mode guerre jusqu'au niveau 90 - La Foire de Sombrelune ouvre dimanche pour 10% d'exp en plus." },
             { id = "6af1d802", text = "Terminez l'assaut hebdomadaire de Stormarion dans le Voidstorm. (Il est disponible en Accès Anticipé)" }, -- ⚠️ UNVERIFIED
-            { id = "35bc0cfd", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour du renom. Celles-ci ont un verrouillage hebdomadaire pour chaque rare." },
+            { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
             { id = "2687fe6c", text = "Traquez les trésors de chaque région pour du Renom gratuit. Voir le doc pour le guide" },
             { id = "91e7ee6c", text = "Terminez 4x Proie en difficulté normale pour du renom" }, -- ⚠️ UNVERIFIED
             { id = "8bf4f442", text = "Terminez le haut fait Chasseur de Légendes de Midnight pour du renom - voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
@@ -55,10 +55,11 @@ local DATASET = {
             { id = "da2fa0ef", text = "Complétez l'Événement d'abondance hebdo dans Zul'Aman." },
             { id = "dbc8384b", text = "Complétez l'événement Légendes des Haranir hebdo à Harandar." },
             { id = "9ad64245", text = "Complétez l'Assaut de Stormarion hebdo dans la Tempête du néant." },
-            { id = "35bc0cfd", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour du renom. Celles-ci ont un verrouillage hebdomadaire pour chaque rare." },
+            { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
             { id = "1b42ce30", text = "Si ce n'est pas fait, traquez les trésors de chaque région, le chasseur de légendes et les hauts pics pour du Renom gratuit. Voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
             { id = "a892ac44", text = "Débloquez les Profondeurs jusqu'au palier 8" },
-            { id = "9bc44f02", text = "Terminez 2x Proie difficile pour de l'équipement Vétéran sur chaque personnage - si un seul personnage, faites-en 4x sur un personnage pour du renom" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Terminez 4x Proie difficile pour obtenir de l'équipement vétéran et des armoiries vétéran sur chaque personnage" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Optionnel) Terminez 2x Proie difficile aléatoire pour obtenir des armoiries vétéran sur chaque personnage - faire 2x optionnel par semaine plafonnera les armoiries vétéran à la fin de la semaine 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Effectuez un tour mondial des donjons M0 – récompense niv. obj. vétéran – n'améliorez pas encore" },
         },
     },
@@ -76,9 +77,10 @@ local DATASET = {
             { id = "da2fa0ef", text = "Complétez l'Événement d'abondance hebdo dans Zul'Aman." },
             { id = "dbc8384b", text = "Complétez l'événement Légendes des Haranir hebdo à Harandar." },
             { id = "9ad64245", text = "Complétez l'Assaut de Stormarion hebdo dans la Tempête du néant." },
-            { id = "35bc0cfd", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour du renom. Celles-ci ont un verrouillage hebdomadaire pour chaque rare." },
+            { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
             { id = "23cb93ed", text = "Débloquez les Profondeurs jusqu'au palier 8 si ce n'est pas encore fait" },
-            { id = "9bc44f02", text = "Terminez 2x Proie difficile pour de l'équipement Vétéran sur chaque personnage - si un seul personnage, faites-en 4x sur un personnage pour du renom" }, -- ⚠️ UNVERIFIED
+            { id = "636c0b3a", text = "Terminez 4x Proie difficile pour obtenir de l'équipement vétéran et des armoiries vétéran sur chaque personnage" }, -- ⚠️ UNVERIFIED
+            { id = "efb035ba", text = "(Optionnel) Terminez 2x Proie difficile aléatoire pour obtenir des armoiries vétéran sur chaque personnage - faire 2x optionnel par semaine plafonnera les armoiries vétéran à la fin de la semaine 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Effectuez un tour mondial des donjons M0 – récompense niv. obj. vétéran – n'améliorez pas encore" },
             { id = "c33e5c84", text = "Si vous raidez le mardi 17, fabriquez. Consultez le document pour plus d'informations." },
         },
