@@ -27,3 +27,5 @@ locales\ruRU.lua
 locales\ruRU_Data.lua
 locales\koKR.lua
 locales\koKR_Data.lua
+locales\zhCN.lua
+locales\zhCN_Data.lua
