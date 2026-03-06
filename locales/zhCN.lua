@@ -178,6 +178,15 @@ local STRINGS = {
 	SLASH_USAGE_TOGGLE   = "用法：/larias 或 /lcl 来切换清单",
 	SLASH_USAGE_LOCALE   = "用法：/larias locale auto|enUS|deDE|esES|esMX|frFR|itIT|ptBR|ruRU|koKR|zhCN",
 	SLASH_LOCALE_SET_FMT = "语言已设置为 %s。（生效：%s）",
+	-- ── Support / copy-link strings ───────────────────────────────────────
+	LOCALE_RELOAD_TEXT       = "语言设置已保存。重新加载界面以应用新语言。", -- ⚠️ UNVERIFIED
+	LOCALE_RELOAD_BTN_NOW    = "立即重载", -- ⚠️ UNVERIFIED
+	LOCALE_RELOAD_BTN_LATER  = "稍后", -- ⚠️ UNVERIFIED
+	COPY_LINK_POPUP_TEXT     = "按 |cffffffffCtrl+C|r 复制：", -- ⚠️ UNVERIFIED
+	GUIDE_LINK_HOVER_TOOLTIP = "点击复制攻略链接", -- ⚠️ UNVERIFIED
+	SUPPORT_BTN_GUIDE_DOC    = "攻略文档", -- ⚠️ UNVERIFIED
+	SUPPORT_BTN_CHECKLIST    = "清单", -- ⚠️ UNVERIFIED
+	SUPPORT_BTN_DISCORD      = "Discord",
 }
 
 for key, value in pairs(STRINGS) do

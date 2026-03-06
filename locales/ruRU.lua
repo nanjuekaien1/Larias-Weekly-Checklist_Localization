@@ -191,6 +191,15 @@ local STRINGS = {
     ALL_WEEKS_COMPLETE = "Завершено!",
     CHAR_PICKER_BUTTON = "Сменить профиль",
     CHAR_PICKER_TOOLTIP_REMOVE = "Чтобы удалить персонажа, используйте меню настроек.",
+    -- ── Support / copy-link strings ───────────────────────────────────────
+    LOCALE_RELOAD_TEXT       = "Изменение языка сохранено. Перезагрузите интерфейс для применения нового языка.", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_NOW    = "Перезагрузить", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_LATER  = "Позже", -- ⚠️ UNVERIFIED
+    COPY_LINK_POPUP_TEXT     = "Нажмите |cffffffffCtrl+C|r для копирования:", -- ⚠️ UNVERIFIED
+    GUIDE_LINK_HOVER_TOOLTIP = "Нажмите для копирования ссылки на гайд", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_GUIDE_DOC    = "Гайд", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_CHECKLIST    = "Чеклист", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_DISCORD      = "Discord",
 }
 
 for key, value in pairs(STRINGS) do

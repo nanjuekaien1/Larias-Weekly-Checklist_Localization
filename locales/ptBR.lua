@@ -192,6 +192,15 @@ local STRINGS = {
     ALL_WEEKS_COMPLETE = "Concluído!",
     CHAR_PICKER_BUTTON = "Trocar Perfil",
     CHAR_PICKER_TOOLTIP_REMOVE = "Para remover um personagem, use o menu de Opções.",
+    -- ── Support / copy-link strings ───────────────────────────────────────
+    LOCALE_RELOAD_TEXT       = "Alteração de idioma salva. Recarregue a interface para aplicar o novo idioma.", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_NOW    = "Recarregar agora", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_LATER  = "Depois", -- ⚠️ UNVERIFIED
+    COPY_LINK_POPUP_TEXT     = "Pressione |cffffffffCtrl+C|r para copiar:", -- ⚠️ UNVERIFIED
+    GUIDE_LINK_HOVER_TOOLTIP = "Clique para copiar o link do guia", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_GUIDE_DOC    = "Guia", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_CHECKLIST    = "Lista", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_DISCORD      = "Discord",
 }
 
 for key, value in pairs(STRINGS) do

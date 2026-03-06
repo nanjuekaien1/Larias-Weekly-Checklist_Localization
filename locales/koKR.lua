@@ -190,6 +190,15 @@ local STRINGS = {
     ALL_WEEKS_COMPLETE = "완료!",
     CHAR_PICKER_BUTTON = "프로필 전환",
     CHAR_PICKER_TOOLTIP_REMOVE = "캐릭터를 제거하려면 옵션 메뉴를 사용하세요.",
+    -- ── Support / copy-link strings ───────────────────────────────────────
+    LOCALE_RELOAD_TEXT       = "언어 변경이 저장되었습니다. 새 언어를 적용하려면 UI를 새로고침하세요.", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_NOW    = "지금 새로고침", -- ⚠️ UNVERIFIED
+    LOCALE_RELOAD_BTN_LATER  = "나중에", -- ⚠️ UNVERIFIED
+    COPY_LINK_POPUP_TEXT     = "|cffffffffCtrl+C|r를 눌러 복사:", -- ⚠️ UNVERIFIED
+    GUIDE_LINK_HOVER_TOOLTIP = "클릭하여 가이드 링크 복사", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_GUIDE_DOC    = "가이드", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_CHECKLIST    = "체크리스트", -- ⚠️ UNVERIFIED
+    SUPPORT_BTN_DISCORD      = "Discord",
 }
 
 for key, value in pairs(STRINGS) do
