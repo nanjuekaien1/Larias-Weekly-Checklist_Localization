@@ -27,10 +27,10 @@ local DATASET = {
             { id = "90db618c", text = "Montez les personnages en mode guerre jusqu'au niveau 90 - La Foire de Sombrelune ouvre dimanche pour 10% d'exp en plus." },
             { id = "6af1d802", text = "Terminez l'assaut hebdomadaire de Stormarion dans le Voidstorm. (Il est disponible en Accès Anticipé)" }, -- ⚠️ UNVERIFIED
             { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
-            { id = "2687fe6c", text = "Traquez les trésors de chaque région pour du Renom gratuit. Voir le doc pour le guide" },
+            { id = "0394cb0d", text = "Traquez les trésors de chaque région pour obtenir du Renom gratuit. Consultez le guide pour plus d'informations" },
             { id = "91e7ee6c", text = "Terminez 4x Proie en difficulté normale pour du renom" }, -- ⚠️ UNVERIFIED
-            { id = "8bf4f442", text = "Terminez le haut fait Chasseur de Légendes de Midnight pour du renom - voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
-            { id = "c886190c", text = "Terminez le haut fait Pics les Plus Élevés pour du renom - voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
+            { id = "c699a5d6", text = "Complétez le haut fait Chasseur de légendes de Minuit pour du renom - Consultez le guide pour plus d'informations" }, -- ⚠️ UNVERIFIED
+            { id = "cfd4a904", text = "Complétez le haut fait Les plus hauts sommets pour du renom - Consultez le guide pour plus d'informations" }, -- ⚠️ UNVERIFIED
             { id = "f9b8eb01", text = "Terminez les chaînes de quêtes secondaires pour du renom. (peut être fait sur les rerolls pour monter de niveau en même temps). Le bonus de la Foire de Sombrelune ne donne pas de renom." },
             { id = "4aa4b47d", text = "Note : Seuls les objets de champion de la Singularité ET de Chantvif sont disponibles en accès anticipé - les autres deviendront disponibles soit le lundi après le lancement officiel, soit après la réinitialisation hebdomadaire de chaque région." },
             { id = "ba1890e4", text = "Terminez la Soirée de Saltheril hebdomadaire dans les Bois des Chants éternels. N'oubliez pas de prendre la quête de renom pour le heaume de champion si vous avez le renom" },
@@ -41,13 +41,13 @@ local DATASET = {
         id = "50281d6f",
         title = "Pré-saison semaine 1 - 3 mars - M0",
         items = {
-            { id = "727109d8", text = "Ne dépensez aucun Blason avant qu'on vous le dise. Voir le guide pour savoir pourquoi nous gardons les blasons." },
+            { id = "2e0fb03d", text = "Ne dépensez aucune Armoirie tant qu'on ne vous le dit pas. Consultez le guide pour savoir pourquoi nous gardons les armoiries." },
             { id = "5a2e9ede", text = "NE PAS FABRIQUER" },
             { id = "c06ee1a3", text = "Si vous êtes sur un reroll et ne voyez pas certaines de ces quêtes, allez voir Soridormi à l'auberge de Lune-d'Argent et choisissez « J'ai arrêté le Voidstorm » pour passer la campagne." }, -- ⚠️ UNVERIFIED
-            { id = "44fbfe51", text = "Augmentez le renom de la Singularité au rang 7 pour un bijou de champion 1/6 - provient d'une quête du vendeur de renom (ne s'achète pas)" },
-            { id = "02ceff50", text = "Augmentez le renom des Hara'ti au rang 8 pour une ceinture de champion 1/6 - provient d'une quête du vendeur de renom (ne s'achète pas)" },
-            { id = "cdea3773", text = "Augmentez le renom de Lune-d'Argent au rang 9 pour un heaume de champion 1/6 - provient d'une quête du vendeur de renom (ne s'achète pas)" },
-            { id = "19687ed0", text = "Augmentez le renom de la tribu Amani au rang 9 pour un collier de champion 1/6 - provient d'une quête du vendeur de renom (ne s'achète pas)" },
+            { id = "755d27e7", text = "Élevez le renom de La Singularité au rang 7 pour un bijou de champion 1/6 - provient d'une quête du vendeur de renom" },
+            { id = "f213fee8", text = "Élevez le renom des Hara'ti au rang 8 pour une ceinture de champion 1/6 - provient d'une quête du vendeur de renom" },
+            { id = "81fd810d", text = "Élevez le renom de Lune-d'Argent au rang 9 pour un heaume de champion 1/6 - provient d'une quête du vendeur de renom" },
+            { id = "804b15e3", text = "Élevez le renom de la tribu Amani au rang 9 pour un collier de champion 1/6 - provient d'une quête du vendeur de renom" },
             { id = "101e78a9", text = "Terminez la quête de donjon hebdomadaire de Halduron Brightewing pour 1000 de renom" }, -- ⚠️ UNVERIFIED
             { id = "0c3b8835", text = "Terminez la quête d'événement mondial hebdomadaire pour un coffre apogée auprès de Dame Liadrin - vous pouvez prendre la quête d'événement hebdomadaire et la faire avec les événements ci-dessous" }, -- ⚠️ UNVERIFIED
             { id = "879d3833", text = "Terminez la quête de tour du monde hebdomadaire de Lorthremar pour une étincelle en faisant les quêtes ci-dessous" }, -- ⚠️ UNVERIFIED
@@ -56,9 +56,9 @@ local DATASET = {
             { id = "dbc8384b", text = "Complétez l'événement Légendes des Haranir hebdo à Harandar." },
             { id = "9ad64245", text = "Complétez l'Assaut de Stormarion hebdo dans la Tempête du néant." },
             { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
-            { id = "1b42ce30", text = "Si ce n'est pas fait, traquez les trésors de chaque région, le chasseur de légendes et les hauts pics pour du Renom gratuit. Voir le doc pour le guide" }, -- ⚠️ UNVERIFIED
+            { id = "666a0192", text = "Si ce n'est pas fait, traquez les trésors de chaque région, le chasseur de légendes et les hauts sommets pour du Renom gratuit. Consultez le guide pour plus d'informations." },
             { id = "a892ac44", text = "Débloquez les Profondeurs jusqu'au palier 8" },
-            { id = "636c0b3a", text = "Terminez 4x Proie difficile pour obtenir de l'équipement vétéran et des armoiries vétéran sur chaque personnage" }, -- ⚠️ UNVERIFIED
+            { id = "d54f7430", text = "Complétez 4x Proie coriace. Les 2 premières donneront de l'équipement Vétéran ; les 4 donneront des Armoiries vétéran dont vous avez besoin pour plafonner." },
             { id = "efb035ba", text = "(Optionnel) Terminez 2x Proie difficile aléatoire pour obtenir des armoiries vétéran sur chaque personnage - faire 2x optionnel par semaine plafonnera les armoiries vétéran à la fin de la semaine 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Effectuez un tour mondial des donjons M0 – récompense niv. obj. vétéran – n'améliorez pas encore" },
         },
@@ -68,21 +68,21 @@ local DATASET = {
         id = "ff1f5a67",
         title = "Pré-saison semaine 2 - 10 mars - M0",
         items = {
-            { id = "727109d8", text = "Ne dépensez aucun Blason avant qu'on vous le dise. Voir le guide pour savoir pourquoi nous gardons les blasons." },
+            { id = "2e0fb03d", text = "Ne dépensez aucune Armoirie tant qu'on ne vous le dit pas. Consultez le guide pour savoir pourquoi nous gardons les armoiries." },
             { id = "5a2e9ede", text = "NE PAS FABRIQUER" },
             { id = "75c5fe6e", text = "Si pas terminé, continuez à augmenter la renommée pour les pièces champion" },
             { id = "101e78a9", text = "Terminez la quête de donjon hebdomadaire de Halduron Brightewing pour 1000 de renom" }, -- ⚠️ UNVERIFIED
-            { id = "0c3b8835", text = "Terminez la quête d'événement mondial hebdomadaire pour un coffre apogée auprès de Dame Liadrin - vous pouvez prendre la quête d'événement hebdomadaire et la faire avec les événements ci-dessous" }, -- ⚠️ UNVERIFIED
-            { id = "e326ed96", text = "Complétez la Soirée de Saltheril hebdo dans les Bois des Chants éternels." },
-            { id = "da2fa0ef", text = "Complétez l'Événement d'abondance hebdo dans Zul'Aman." },
-            { id = "dbc8384b", text = "Complétez l'événement Légendes des Haranir hebdo à Harandar." },
-            { id = "9ad64245", text = "Complétez l'Assaut de Stormarion hebdo dans la Tempête du néant." },
+            { id = "e0ecce24", text = "Complétez la quête d'événement mondial hebdomadaire pour un coffre apogée et une étincelle auprès de Dame Liadrin" },
+            { id = "8b55f0c7", text = "(Optionnel) Complétez la Soirée de Saltheril hebdomadaire dans les Bois des Chants éternels." },
+            { id = "8e107032", text = "(Optionnel) Complétez l'événement d'Abondance hebdomadaire dans Zul'Aman." },
+            { id = "d5a12c89", text = "(Optionnel) Complétez l'événement Légendes des Haranir hebdomadaire à Harandar." },
+            { id = "514a6926", text = "(Optionnel) Complétez l'Assaut de Stormarion hebdomadaire dans le Videorage." }, -- ⚠️ UNVERIFIED
             { id = "6762e305", text = "(Optionnel) Tuez chaque créature rare une fois dans chaque zone pour gagner du renom. Il s'agit d'un bonus unique pour chaque rare qui ne se réinitialise pas chaque semaine." },
             { id = "23cb93ed", text = "Débloquez les Profondeurs jusqu'au palier 8 si ce n'est pas encore fait" },
-            { id = "636c0b3a", text = "Terminez 4x Proie difficile pour obtenir de l'équipement vétéran et des armoiries vétéran sur chaque personnage" }, -- ⚠️ UNVERIFIED
+            { id = "d54f7430", text = "Complétez 4x Proie coriace. Les 2 premières donneront de l'équipement Vétéran ; les 4 donneront des Armoiries vétéran dont vous avez besoin pour plafonner." },
             { id = "efb035ba", text = "(Optionnel) Terminez 2x Proie difficile aléatoire pour obtenir des armoiries vétéran sur chaque personnage - faire 2x optionnel par semaine plafonnera les armoiries vétéran à la fin de la semaine 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Effectuez un tour mondial des donjons M0 – récompense niv. obj. vétéran – n'améliorez pas encore" },
-            { id = "c33e5c84", text = "Si vous raidez le mardi 17, fabriquez. Consultez le document pour plus d'informations." },
+            { id = "f2af7330", text = "Si vous faites un raid le mardi 17, craftez. Consultez le guide pour plus d'informations." },
         },
     },
 
@@ -90,17 +90,18 @@ local DATASET = {
         id = "33a3fcba",
         title = "Saison 1 semaine 1 - 17 mars - Semaine héroïque",
         items = {
-            { id = "727109d8", text = "Ne dépensez aucun Blason avant qu'on vous le dise. Voir le guide pour savoir pourquoi nous gardons les blasons." },
-            { id = "5b379666", text = "Faites le LFR pour les pièces de palier (consultez le guide pour savoir pourquoi)" },
-            { id = "879d3833", text = "Terminez la quête de tour du monde hebdomadaire de Lorthremar pour une étincelle en faisant les quêtes ci-dessous" }, -- ⚠️ UNVERIFIED
-            { id = "9686fde4", text = "Terminez la quête de logement hebdomadaire de Vaeli pour ?blasons héroïques? (sera mis à jour quand ce sera en direct)" }, -- ⚠️ UNVERIFIED
-            { id = "952916cd", text = "(Optionnel) Terminez un Tour du Monde de donjons M0 - récompense ilvl champion" }, -- ⚠️ UNVERIFIED
+            { id = "2e0fb03d", text = "Ne dépensez aucune Armoirie tant qu'on ne vous le dit pas. Consultez le guide pour savoir pourquoi nous gardons les armoiries." },
+            { id = "e66847d8", text = "Faites le RDF pour des pièces de panoplie - obtenir un bonus 4 pièces permettra aux charges de catalyseur de tomber de tout le contenu" },
+            { id = "e0ecce24", text = "Complétez la quête d'événement mondial hebdomadaire pour un coffre apogée et une étincelle auprès de Dame Liadrin" },
+            { id = "9686fde4", text = "Complétez la quête de logement hebdomadaire de Vaeli pour ?armoiries héros? (sera mis à jour quand ce sera en ligne)" },
+            { id = "ca5a8044", text = "Si disponible, complétez la quête JcJ pour un collier/anneau héros garanti - peut-être faisable avec le classement JcJ optionnel ci-dessous" },
+            { id = "d8d237fa", text = "(Optionnel) Élevez votre classement JcJ à 1600 pour une charge de catalyseur (c'est la même charge de catalyseur partagée avec 2 000 de score M+ de la semaine suivante). Si vous obtenez 2 pièces de panoplie de votre raid cette semaine, cela vous permettrait de catalyser 2 objets et de commencer à recevoir des charges de Catalyseur de vos m+ la semaine prochaine." },
+            { id = "45c7d35b", text = "(Optionnel) Complétez une tournée mondiale des donjons M0 - récompense ilvl champion - verrouillage quotidien" },
             { id = "22842538", text = "Terminez 2x Proie cauchemardesque pour de l'équipement Champion sur chaque personnage" }, -- ⚠️ UNVERIFIED
             { id = "dc0e2686", text = "Tuez le boss mondial pour un objet champion 2/6 niv. 250" },
-            { id = "3e0dfde7", text = "Si disponible, complétez la quête JcJ pour un collier/anneau héroïque garanti" },
             { id = "b6846065", text = "Faites des Profondeurs généreuses de palier 8 ou supérieur, utilisez la carte sur une Profondeur palier 8+ - en faisant cela, débloquez les Profondeurs palier 11" },
             { id = "eff76e73", text = "Avant le raid : fabriquez 2 pièces niv. 246, 2 embellissements sur les emplacements faibles, utilisez 160 Écus de vétéran" },
-            { id = "2af0bfb5", text = "Avant le raid : dépensez tous les Écus d'aventure, de vétéran et de champion pour tout améliorer" },
+            { id = "679a07b9", text = "Avant le raid, dépensez toutes les Armoiries aventurier, vétéran et champion en améliorant tout. Ne dépensez pas les armoiries héroïques ou mythiques." },
             { id = "5768e0fe", text = "Suivi des Écus : 0/100 Héroïque, 0/100 Mythique" },
         },
     },
@@ -109,11 +110,12 @@ local DATASET = {
         id = "d2de9d43",
         title = "Semaine 2 - 24 mars - Semaine mythique, M+ ouvre, prenez des congés les nerds",
         items = {
-            { id = "727109d8", text = "Ne dépensez aucun Blason avant qu'on vous le dise. Voir le guide pour savoir pourquoi nous gardons les blasons." },
-            { id = "7e42a12d", text = "Note arme fabriquée 1M, consultez le guide, vérifiez le chemin de fabrication (TRÈS IMPORTANT !)" },
-            { id = "5b379666", text = "Faites le LFR pour les pièces de palier (consultez le guide pour savoir pourquoi)" },
+            { id = "36d21691", text = "Ne dépensez aucune Armoirie héroïque ou mythique tant qu'on ne vous le dit pas. Consultez le guide pour savoir pourquoi nous gardons les armoiries." },
+            { id = "e0ecce24", text = "Complétez la quête d'événement mondial hebdomadaire pour un coffre apogée et une étincelle auprès de Dame Liadrin" },
+            { id = "9686fde4", text = "Complétez la quête de logement hebdomadaire de Vaeli pour ?armoiries héros? (sera mis à jour quand ce sera en ligne)" },
+            { id = "4056a14a", text = "Si vous n'avez pas le bonus 4 pièces, faites le RDF pour des pièces de panoplie - obtenir un bonus 4 pièces permettra aux charges de catalyseur de tomber de tout le contenu" },
             { id = "16cf341e", text = "(Optionnel) Tuez le boss mondial pour un objet champion 2/6 niv. 250" },
-            { id = "3ccf0a1f", text = "(Optionnel) Complétez 4 fois la Traque de cauchemar pour équipement champion et renommée." },
+            { id = "4aa82ede", text = "(Optionnel) Complétez 2x Proie cauchemardesque pour de l'équipement Champion sur chaque personnage" },
             { id = "26d0b610", text = "Faites au moins un Gouffre abondant T11 pour obtenir la quête de la Pierre runique fissurée" }, -- ⚠️ UNVERIFIED
             { id = "286f219c", text = "Continuez à dépenser tous les Écus d'aventure, de vétéran et de champion pour tout améliorer" },
             { id = "74924a7b", text = "Farmez les +10 pour l'équipement niv. 266 dans chaque emplacement" },
@@ -129,7 +131,6 @@ local DATASET = {
         title = "Semaine 3 - 31 mars - Le raid final ouvre",
         items = {
             { id = "1fbc825e", text = "Ouvrez la Grande Chambre Forte (objet mythique 272+) – améliorez après fabrication" },
-            { id = "fb8255a7", text = "Fabriquez des objets – consultez le guide pour 2 choix de parcours" },
             { id = "8226c872", text = "Sans bonus 4 pièces, faites le LFR pour les pièces de palier (consultez le guide)" },
             { id = "1db5f946", text = "Farmez les +10 pour la Grande Chambre Forte + Écus" },
             { id = "c316485a", text = "Héroïque : améliorez 2 de vos objets 269 4/6 à 276 6/6 pour 80 Écus héroïques" },

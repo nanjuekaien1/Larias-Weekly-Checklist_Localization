@@ -27,10 +27,10 @@ local DATASET = {
             { id = "90db618c", text = "Sube personajes con modo de guerra activado al 90 - La FDL abre el domingo para obtener 10% más de exp." },
             { id = "6af1d802", text = "Completa el Asalto de Stormarion semanal en la Tormenta del Vacío. (Está disponible en Acceso Anticipado)" }, -- ⚠️ UNVERIFIED
             { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
-            { id = "2687fe6c", text = "Busca los tesoros de cada región para obtener Renombre gratis. Ve la guía en el documento" },
+            { id = "0394cb0d", text = "Busca los tesoros de cada región para obtener Renombre gratis. Consulta la guía para más información" },
             { id = "91e7ee6c", text = "Completa 4 Presas en dificultad normal para renombre" }, -- ⚠️ UNVERIFIED
-            { id = "8bf4f442", text = "Completa el logro Cazador de Tradiciones de Medianoche para renombre - ve la guía en el documento" }, -- ⚠️ UNVERIFIED
-            { id = "c886190c", text = "Completa el logro Picos Más Altos para renombre - ve la guía en el documento" }, -- ⚠️ UNVERIFIED
+            { id = "c699a5d6", text = "Completa el logro Cazador de Historia de Midnight para renombre - Consulta la guía para más información" }, -- ⚠️ UNVERIFIED
+            { id = "cfd4a904", text = "Completa el logro Picos Más Altos para renombre - Consulta la guía para más información" }, -- ⚠️ UNVERIFIED
             { id = "f9b8eb01", text = "Completa cadenas de misiones secundarias para renombre. (se pueden hacer con alts para subir de nivel al mismo tiempo). El bonus de FDL no da renombre." },
             { id = "4aa4b47d", text = "Nota: Solo los objetos de campeón de Singularidad Y Canto Eterno están disponibles en el acceso anticipado - los demás estarán disponibles el lunes después del lanzamiento oficial o después del reinicio semanal de cada región." },
             { id = "ba1890e4", text = "Completa el evento semanal Fiesta de Saltheril en Bosque Canción Eterna. No olvides tomar la misión de renombre para el yelmo de campeón si tienes el renombre" },
@@ -41,13 +41,13 @@ local DATASET = {
         id = "50281d6f",
         title = "Pretemporada semana 1 - 3 de marzo - M0",
         items = {
-            { id = "727109d8", text = "No gastes ninguna Blasón hasta que se te indique. Ve la guía para saber por qué guardamos blasones." },
+            { id = "2e0fb03d", text = "No gastes ninguna Emblema hasta que se te indique. Consulta la guía para saber por qué guardamos emblemas." },
             { id = "5a2e9ede", text = "NO FABRICAR" },
             { id = "c06ee1a3", text = "Si estás en un alt y no ves algunas de estas misiones, ve con Soridormi en la Posada de Ciudad de Lunargenta y elige \"Detuve la Tormenta del Vacío\" para saltar la campaña." }, -- ⚠️ UNVERIFIED
-            { id = "44fbfe51", text = "Sube el renombre de La Singularidad a rango 7 para obtener un abalorio de campeón 1/6 - se obtiene de una misión del vendedor de renombre (no se compra)" },
-            { id = "02ceff50", text = "Sube el renombre de Hara'ti a rango 8 para obtener un cinturón de campeón 1/6 - se obtiene de una misión del vendedor de renombre (no se compra)" },
-            { id = "cdea3773", text = "Sube el renombre de Lunadeplata a rango 9 para obtener un yelmo de campeón 1/6 - se obtiene de una misión del vendedor de renombre (no se compra)" },
-            { id = "19687ed0", text = "Sube el renombre de Tribu Amani a rango 9 para obtener un collar de campeón 1/6 - se obtiene de una misión del vendedor de renombre (no se compra)" },
+            { id = "755d27e7", text = "Sube el renombre de La Singularidad al rango 7 para obtener un alhaja de campeón 1/6 - proviene de una misión del vendedor de renombre" }, -- ⚠️ UNVERIFIED
+            { id = "f213fee8", text = "Sube el renombre de Hara'ti al rango 8 para obtener un cinturón de campeón 1/6 - proviene de una misión del vendedor de renombre" },
+            { id = "81fd810d", text = "Sube el renombre de Luna de Plata al rango 9 para obtener un yelmo de campeón 1/6 - proviene de una misión del vendedor de renombre" },
+            { id = "804b15e3", text = "Sube el renombre de Tribu Amani al rango 9 para obtener un collar de campeón 1/6 - proviene de una misión del vendedor de renombre" },
             { id = "101e78a9", text = "Completa la misión semanal de mazmorra de Halduron Ala Luminosa para 1000 de renombre" }, -- ⚠️ UNVERIFIED
             { id = "0c3b8835", text = "Completa la misión semanal de evento mundial para alijo cumbre de Lady Liadrin - puedes tomar la misión de evento semanal y hacerla con los eventos siguientes" }, -- ⚠️ UNVERIFIED
             { id = "879d3833", text = "Completa la misión semanal de gira mundial de Lorthremar para chispa haciendo las siguientes misiones" }, -- ⚠️ UNVERIFIED
@@ -56,9 +56,9 @@ local DATASET = {
             { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
             { id = "9ad64245", text = "Completa el Asalto de Tormarión semanal en la Tormenta del Vacío." },
             { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
-            { id = "1b42ce30", text = "Si no está hecho, busca los tesoros de cada región, cazador de tradiciones y picos altos para obtener Renombre gratis. Ve la guía en el documento" }, -- ⚠️ UNVERIFIED
+            { id = "666a0192", text = "Si no lo has hecho, busca los tesoros de cada región, cazador de historia y picos altos para obtener Renombre gratis. Consulta la guía para más información." },
             { id = "a892ac44", text = "Desbloquea Cavernas hasta el nivel 8" },
-            { id = "636c0b3a", text = "Completa 4x Presa Difícil para equipo Veterano y emblemas Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "d54f7430", text = "Completa 4x Presa Difícil. Las primeras 2 darán equipo Veterano; las 4 darán Emblemas Veteranas que necesitas para llegar al límite." },
             { id = "efb035ba", text = "(Opcional) Completa 2x Presa Difícil aleatorias para emblemas Veteranos en cada personaje - hacer 2x opcionales por semana alcanzará el límite de emblemas Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
         },
@@ -68,21 +68,21 @@ local DATASET = {
         id = "ff1f5a67",
         title = "Pretemporada semana 2 - 10 de marzo - M0",
         items = {
-            { id = "727109d8", text = "No gastes ninguna Blasón hasta que se te indique. Ve la guía para saber por qué guardamos blasones." },
+            { id = "2e0fb03d", text = "No gastes ninguna Emblema hasta que se te indique. Consulta la guía para saber por qué guardamos emblemas." },
             { id = "5a2e9ede", text = "NO FABRICAR" },
             { id = "75c5fe6e", text = "Si no completado, continúa subiendo la reputación para piezas de campeón" },
             { id = "101e78a9", text = "Completa la misión semanal de mazmorra de Halduron Ala Luminosa para 1000 de renombre" }, -- ⚠️ UNVERIFIED
-            { id = "0c3b8835", text = "Completa la misión semanal de evento mundial para alijo cumbre de Lady Liadrin - puedes tomar la misión de evento semanal y hacerla con los eventos siguientes" }, -- ⚠️ UNVERIFIED
-            { id = "e326ed96", text = "Completa la Velada de Saltheril semanal en los Bosques Siempreverd." },
-            { id = "da2fa0ef", text = "Completa el Evento de la abundancia semanal en Zul'Aman." },
-            { id = "dbc8384b", text = "Completa el evento Leyendas de los Haranir semanal en Harandar." },
-            { id = "9ad64245", text = "Completa el Asalto de Tormarión semanal en la Tormenta del Vacío." },
+            { id = "e0ecce24", text = "Completa la misión del evento mundial semanal para obtener alijo cumbre y chispa de Lady Liadrin" },
+            { id = "8b55f0c7", text = "(Opcional) Completa la Velada de Saltheril semanal en el Bosque Canción Eterna." },
+            { id = "8e107032", text = "(Opcional) Completa el Evento de Abundancia semanal en Zul'aman." },
+            { id = "d5a12c89", text = "(Opcional) Completa el evento Leyendas de los Haranir semanal en Harandar." }, -- ⚠️ UNVERIFIED
+            { id = "514a6926", text = "(Opcional) Completa el Asalto Estomarion semanal en la Tormenta del Vacío." }, -- ⚠️ UNVERIFIED
             { id = "6762e305", text = "(Opcional) Mata cada raro una vez en cada zona para renombre. Esta es una bonificación única por cada raro y no se reinicia semanalmente." },
             { id = "23cb93ed", text = "Desbloquea Cavernas hasta el nivel 8 si aún no lo has hecho" },
-            { id = "636c0b3a", text = "Completa 4x Presa Difícil para equipo Veterano y emblemas Veteranos en cada personaje" }, -- ⚠️ UNVERIFIED
+            { id = "d54f7430", text = "Completa 4x Presa Difícil. Las primeras 2 darán equipo Veterano; las 4 darán Emblemas Veteranas que necesitas para llegar al límite." },
             { id = "efb035ba", text = "(Opcional) Completa 2x Presa Difícil aleatorias para emblemas Veteranos en cada personaje - hacer 2x opcionales por semana alcanzará el límite de emblemas Veteranos al final de la semana 2" }, -- ⚠️ UNVERIFIED
             { id = "a7ee4829", text = "Completa un tour mundial de mazmorras M0 – recompensa nivel de objeto veterano – no mejores todavía" },
-            { id = "c33e5c84", text = "Si raideas el martes 17, craftea. Mira el documento para más info." },
+            { id = "f2af7330", text = "Si haces bandas el martes 17, crea objetos. Consulta la guía para más información." },
         },
     },
 
@@ -90,17 +90,18 @@ local DATASET = {
         id = "33a3fcba",
         title = "Temporada 1 semana 1 - 17 de marzo - Semana heroica",
         items = {
-            { id = "727109d8", text = "No gastes ninguna Blasón hasta que se te indique. Ve la guía para saber por qué guardamos blasones." },
-            { id = "5b379666", text = "Haz LFR para piezas de conjunto (mira la guía para saber por qué)" },
-            { id = "879d3833", text = "Completa la misión semanal de gira mundial de Lorthremar para chispa haciendo las siguientes misiones" }, -- ⚠️ UNVERIFIED
-            { id = "9686fde4", text = "Completa la misión semanal de vivienda de Vaeli para obtener ¿blasones de héroe? (se actualizará cuando esté disponible)" },
-            { id = "952916cd", text = "(Opcional) Completa una Gira Mundial de mazmorras M0 - recompensa nivel de objeto de campeón" }, -- ⚠️ UNVERIFIED
+            { id = "2e0fb03d", text = "No gastes ninguna Emblema hasta que se te indique. Consulta la guía para saber por qué guardamos emblemas." },
+            { id = "e66847d8", text = "Haz LFR para piezas de banda - obtener una bonificación 4 set permitirá que caigan cargas de catalizador de todo el contenido" },
+            { id = "e0ecce24", text = "Completa la misión del evento mundial semanal para obtener alijo cumbre y chispa de Lady Liadrin" },
+            { id = "9686fde4", text = "Completa la misión de vivienda semanal de Vaeli para ¿emblemas de héroe? (se actualizará cuando salga en vivo)" }, -- ⚠️ UNVERIFIED
+            { id = "ca5a8044", text = "Si está disponible, completa la misión JcJ para obtener collar/anillo de héroe garantizado - tal vez se pueda hacer con la clasificación JcJ opcional de abajo" },
+            { id = "d8d237fa", text = "(Opcional) Sube la clasificación JcJ a 1600 para obtener una carga de catalizador (esta es la misma carga de catalizador compartida con la puntuación de 2,000 M+ de la próxima semana). Si obtienes 2 piezas de banda esta semana, esto te permitiría catalizar 2 objetos y comenzar a obtener cargas de Catalizador de tus m+ la próxima semana." },
+            { id = "45c7d35b", text = "(Opcional) Completa un Tour Mundial de mazmorras M0 - recompensa nvl de objeto de campeón - bloqueo diario" },
             { id = "22842538", text = "Completa 2 Presas de Pesadilla para equipo de Campeón en cada personaje" }, -- ⚠️ UNVERIFIED
             { id = "dc0e2686", text = "Mata al jefe del mundo para un objeto de campeón 2/6 ilvl 250" },
-            { id = "3e0dfde7", text = "Si disponible, completa la misión JcJ para collar/anillo de héroe garantizado" },
             { id = "b6846065", text = "Haz cavernas abundantes de nivel 8 o superior, usa el mapa en caverna de nivel 8+ - mientras lo haces, desbloquea cavernas de nivel 11" },
             { id = "eff76e73", text = "Antes de raid, craftea 2 piezas ilvl 246, 2 adornos en huecos débiles, usa 160 crestalboradas de veterano" },
-            { id = "2af0bfb5", text = "Antes de raid, gasta todas las crestalboradas de aventurero, veterano y campeón mejorándolo todo" },
+            { id = "679a07b9", text = "Antes de la banda, gasta todas las Emblemas de Aventurero, Veterano y Campeón mejorando cualquier cosa. No gastes emblemas Heroicas o Míticas." },
             { id = "5768e0fe", text = "Seguimiento de crestalboradas: 0/100 Heroicas, 0/100 Míticas" },
         },
     },
@@ -109,11 +110,12 @@ local DATASET = {
         id = "d2de9d43",
         title = "Semana 2 - 24 de marzo - Semana mítica, abren M+, tómate el día libre giganerd",
         items = {
-            { id = "727109d8", text = "No gastes ninguna Blasón hasta que se te indique. Ve la guía para saber por qué guardamos blasones." },
-            { id = "7e42a12d", text = "Nota de arma 1M crafteada: mira la guía, verifica el camino de crafteo (¡MUY IMPORTANTE!)" },
-            { id = "5b379666", text = "Haz LFR para piezas de conjunto (mira la guía para saber por qué)" },
+            { id = "36d21691", text = "No gastes ninguna Emblema Heroica o Mítica hasta que se te indique. Consulta la guía para saber por qué guardamos emblemas." },
+            { id = "e0ecce24", text = "Completa la misión del evento mundial semanal para obtener alijo cumbre y chispa de Lady Liadrin" },
+            { id = "9686fde4", text = "Completa la misión de vivienda semanal de Vaeli para ¿emblemas de héroe? (se actualizará cuando salga en vivo)" }, -- ⚠️ UNVERIFIED
+            { id = "4056a14a", text = "Si no tienes 4 set, haz LFR para piezas de banda - obtener una bonificación 4 set permitirá que caigan cargas de catalizador de todo el contenido" },
             { id = "16cf341e", text = "(Opcional) Mata al jefe del mundo para un objeto de campeón 2/6 ilvl 250" },
-            { id = "3ccf0a1f", text = "(Opcional) Completa 4 veces la Presa de Pesadilla para equipo de campeón y reputación." },
+            { id = "4aa82ede", text = "(Opcional) Completa 2x Presa Pesadilla para obtener equipo de Campeón en cada personaje" },
             { id = "26d0b610", text = "Haz al menos una Profundidad abundante T11 para conseguir la misión de Piedra rúnica agrietada" }, -- ⚠️ UNVERIFIED
             { id = "286f219c", text = "Continúa gastando todas las crestalboradas de aventurero, veterano y campeón mejorándolo todo" },
             { id = "74924a7b", text = "Farmea +10 para equipo 266 en cada hueco" },
@@ -129,7 +131,6 @@ local DATASET = {
         title = "Semana 3 - 31 de marzo - Abre la banda final",
         items = {
             { id = "1fbc825e", text = "Abre la Gran Cámara (objeto mítico 272+) - mejora después de craftear" },
-            { id = "fb8255a7", text = "Craftea objetos – mira la guía para 2 caminos a elegir" },
             { id = "8226c872", text = "Si no tienes 4p, haz LFR para piezas de conjunto (mira la guía para saber por qué)" },
             { id = "1db5f946", text = "Farmea +10 para Gran Cámara + crestalboradas" },
             { id = "c316485a", text = "Heroico: mejora 2 de tus objetos 269 4/6 a 276 6/6 por 80 crestalboradas heroicas" },
