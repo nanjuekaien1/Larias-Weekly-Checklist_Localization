@@ -1,3 +1,9 @@
+## [2.1.10] (2026-03-06)
+- Auto-translate all-locales – AI-generated, unverified terms flagged
+- Make pipeline fully automated
+- Updated locales: deDE esES esMX frFR itIT koKR ptBR ruRU zhCN
+- Updated interface versions: 120001, 120000, 110207
+
 ## [2.1.9] (2026-03-04)
 - add simplified chinese to python scripts
 - Add zhCN locale, fix locale guards/keys, add TAB_LIST to all locales
